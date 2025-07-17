@@ -1,4 +1,4 @@
-#Currency
+##Currency
 
 Bu proje, döviz kurlarını görüntülemek ve anlık para birimi dönüşümü yapmak için hazırlanmış basit bir React uygulamasıdır.
 
@@ -22,6 +22,6 @@ npm install
 npm start
 
 ##Ekran Görüntüleri
-![](/src/image/img1.png)
-![](/src/image/img2.png)
+![](src/image/img1.png)
+![](src/image/img2.png)
 
