@@ -17,6 +17,11 @@ Bu proje, döviz kurlarını görüntülemek ve anlık para birimi dönüşümü
 
 ```bash
 git clone https://github.com/buseeyldrm/Currency.git
-cd currency-converter
+cd currency
 npm install
 npm start
+
+##Ekran Görüntüleri
+![](/src/image/img1.png)
+![](/src/image/img2.png)
+
