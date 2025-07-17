@@ -1,0 +1,152 @@
+/* Orta panel (Currency) için modern ve şık stil */
+.currency-div {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    border-radius: 24px;
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.18);
+    padding: 36px 32px 32px 32px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Tema bazlı renkler */
+.currency-div.dark-theme,
+.currency-div.dark-theme * {
+    color: #fff !important;
+}
+
+.currency-div.light-theme,
+.currency-div.light-theme * {
+    color: #232526 !important;
+}
+
+.currency-div.light-theme {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e6ea 100%) !important;
+}
+
+.currency-div.dark-theme {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%) !important;
+}
+
+.currency-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.amount,
+.result,
+.from-currency-option,
+.to-currency-option {
+    font-size: 17px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 8px 12px 0;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.04);
+    outline: none;
+    transition: box-shadow 0.2s;
+}
+
+.currency-div.dark-theme .amount,
+.currency-div.dark-theme .result,
+.currency-div.dark-theme .from-currency-option,
+.currency-div.dark-theme .to-currency-option {
+    background: #232526;
+    color: #fff;
+}
+
+.currency-div.light-theme .amount,
+.currency-div.light-theme .result,
+.currency-div.light-theme .from-currency-option,
+.currency-div.light-theme .to-currency-option {
+    background: #fff;
+    color: #232526;
+}
+
+.exchange-button {
+    margin-top: 12px;
+    padding: 12px 38px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.13);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.currency-div.light-theme .exchange-button {
+    color: #fff;
+}
+
+.currency-div .spinner {
+    margin: 18px 0;
+}
+
+/* Tablo */
+table {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+
+.currency-div.dark-theme table {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.currency-div.light-theme table {
+    color: #232526;
+    background: rgba(0, 0, 0, 0.04);
+}
+
+th,
+td {
+    padding: 10px 8px;
+    text-align: center;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.10);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.currency-div.light-theme th {
+    background: rgba(0, 0, 0, 0.07);
+}
+
+tr {
+    border-bottom: 1px solid #fff2;
+}
+
+.currency-div.light-theme tr {
+    border-bottom: 1px solid #23252622;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .currency-div {
+        max-width: 98vw;
+        padding: 18px 2vw;
+    }
+
+    table {
+        font-size: 1rem;
+    }
+}
